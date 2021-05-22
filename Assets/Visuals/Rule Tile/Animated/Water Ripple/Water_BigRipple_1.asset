@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Water_BigRipple_1
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -2999399142424580601, guid: d14dd8897edfb11469b0e7eedca510a0, type: 3}
+  - {fileID: -4496587874173803107, guid: d14dd8897edfb11469b0e7eedca510a0, type: 3}
+  - {fileID: 3471338428925595606, guid: d14dd8897edfb11469b0e7eedca510a0, type: 3}
+  - {fileID: 370063891715533985, guid: d14dd8897edfb11469b0e7eedca510a0, type: 3}
+  - {fileID: -4600666162090895907, guid: d14dd8897edfb11469b0e7eedca510a0, type: 3}
+  - {fileID: -93124520894920488, guid: d14dd8897edfb11469b0e7eedca510a0, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
