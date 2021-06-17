@@ -1,7 +1,82 @@
 fileFormatVersion: 2
 guid: 83b7bfd8276a0554d8f2449fd1c91e15
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3527426440161428920
+    second: Character_SlashDownLeft_0
+  - first:
+      213: -8643618252241972829
+    second: Character_SlashDownLeft_1
+  - first:
+      213: 1161188154168503689
+    second: Character_SlashDownLeft_2
+  - first:
+      213: 7657884030047385686
+    second: Character_SlashDownLeft_3
+  - first:
+      213: -2234531413622764500
+    second: Character_SlashDownLeft_4
+  - first:
+      213: -1532427402580461591
+    second: Character_SlashDownLeft_5
+  - first:
+      213: -5706655167468928393
+    second: Character_SlashDownLeft_6
+  - first:
+      213: -8935597657276224143
+    second: Character_SlashDownLeft_7
+  - first:
+      213: 7595972225945957352
+    second: Character_SlashDownLeft_8
+  - first:
+      213: 341120680545883762
+    second: Character_SlashDownLeft_9
+  - first:
+      213: -3275062631920830032
+    second: Character_SlashDownLeft_10
+  - first:
+      213: 1149504890912253186
+    second: Character_SlashDownLeft_11
+  - first:
+      213: -3611907136735716891
+    second: Character_SlashDownLeft_12
+  - first:
+      213: 3310535150647405039
+    second: Character_SlashDownLeft_13
+  - first:
+      213: 4952971256782103453
+    second: Character_SlashDownLeft_14
+  - first:
+      213: 5047742386423557915
+    second: Character_SlashDownLeft_15
+  - first:
+      213: 6907640077151685166
+    second: Character_SlashDownLeft_16
+  - first:
+      213: 21901727487047312
+    second: Character_SlashDownLeft_17
+  - first:
+      213: -5887322481091045820
+    second: Character_SlashDownLeft_18
+  - first:
+      213: -998331834146160603
+    second: Character_SlashDownLeft_19
+  - first:
+      213: 3230085082516051157
+    second: Character_SlashDownLeft_0
+  - first:
+      213: 7492426374863187052
+    second: Character_SlashDownLeft_1
+  - first:
+      213: -9121226226832643595
+    second: Character_SlashDownLeft_2
+  - first:
+      213: -3836825472813439834
+    second: Character_SlashDownLeft_3
+  - first:
+      213: -1357815007067798537
+    second: Character_SlashDownLeft_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +115,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,7 +184,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character_SlashDownLeft_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d458a1d44193dc20800000000000000
+      internalID: 3230085082516051157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownLeft_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cec7367127af760800000000000000
+      internalID: 7492426374863187052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownLeft_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9e9a1b215ea6180800000000000000
+      internalID: -9121226226832643595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownLeft_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4e8c39f8bd0cac0800000000000000
+      internalID: -3836825472813439834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownLeft_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f38701f172182de0800000000000000
+      internalID: -1357815007067798537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

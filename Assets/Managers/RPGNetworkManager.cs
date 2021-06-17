@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using System;
 
 public class RPGNetworkManager : NetworkManager
 {
     [SerializeField] private List<Transform> spawnPositions;
-    [SerializeField] private GameObject loginScreen;
 
     public PlayerData clientData;
+    public Action OnConnected;
+    public Action OnDisconnected;
 
     //public override void OnServerAddPlayer(NetworkConnection conn)
     //{
@@ -21,7 +23,7 @@ public class RPGNetworkManager : NetworkManager
     {
         base.OnClientConnect(conn);
 
-        //loginScreen.SetActive(false);
+        OnConnected?.Invoke();
 
         conn.Send<PlayerData>(clientData);
     }
@@ -32,7 +34,7 @@ public class RPGNetworkManager : NetworkManager
 
         Debug.Log("Client disconnected");
 
-        //loginScreen.SetActive(true);
+        OnDisconnected?.Invoke();
 
         //SceneManager.LoadScene("Main");
     }
@@ -48,13 +50,13 @@ public class RPGNetworkManager : NetworkManager
     private void OnCreatePlayer(NetworkConnection conn, PlayerData data)
     {
         //Get index for random spawn pos
-        int rand = Random.Range(0, spawnPositions.Count - 1);
+        int rand = UnityEngine.Random.Range(0, spawnPositions.Count - 1);
 
         //Instantiate player
         GameObject playerGO = Instantiate(playerPrefab, spawnPositions[rand].position, spawnPositions[rand].rotation);
 
         //Init Player Data
-        //playerGO.GetComponent<Player>().Initialize(data);
+        playerGO.GetComponent<DEBUG_QuickChar>().Initialize(data);
 
         //Add player to connection
         NetworkServer.AddPlayerForConnection(conn, playerGO);

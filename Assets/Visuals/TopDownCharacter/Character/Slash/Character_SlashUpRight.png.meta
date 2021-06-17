@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: b2a8e19bb2ea9f34392e9780d6224d0e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3527565980006212420
+    second: Character_SlashUpRight_0
+  - first:
+      213: -3868130781181324989
+    second: Character_SlashUpRight_1
+  - first:
+      213: 6405421655504464056
+    second: Character_SlashUpRight_2
+  - first:
+      213: -1689090152757021142
+    second: Character_SlashUpRight_3
+  - first:
+      213: -4244545458211146227
+    second: Character_SlashUpRight_4
+  - first:
+      213: 408745328926095211
+    second: Character_SlashUpRight_0
+  - first:
+      213: 557450153344463120
+    second: Character_SlashUpRight_1
+  - first:
+      213: 7771303961274922856
+    second: Character_SlashUpRight_2
+  - first:
+      213: 2797052104494746157
+    second: Character_SlashUpRight_3
+  - first:
+      213: -1656792619034243168
+    second: Character_SlashUpRight_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,7 +139,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character_SlashUpRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b677d3606b72ca500800000000000000
+      internalID: 408745328926095211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashUpRight_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011751206f57cb700800000000000000
+      internalID: 557450153344463120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashUpRight_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867b06557c739db60800000000000000
+      internalID: 7771303961274922856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashUpRight_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a0ba2d11021d620800000000000000
+      internalID: 2797052104494746157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashUpRight_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af89fb14e3e109e0800000000000000
+      internalID: -1656792619034243168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

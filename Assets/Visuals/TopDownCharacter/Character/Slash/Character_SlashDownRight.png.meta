@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: d35fe779fd4289d47b1e84e92707a94c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -794231797426845082
+    second: Character_SlashDownRight_0
+  - first:
+      213: 4743566529711170758
+    second: Character_SlashDownRight_1
+  - first:
+      213: -2055443623709094508
+    second: Character_SlashDownRight_2
+  - first:
+      213: -6733800707302925252
+    second: Character_SlashDownRight_3
+  - first:
+      213: 7073728385006794898
+    second: Character_SlashDownRight_4
+  - first:
+      213: -3452655161401563250
+    second: Character_SlashDownRight_0
+  - first:
+      213: -6850949026029926724
+    second: Character_SlashDownRight_1
+  - first:
+      213: -9148449427818659276
+    second: Character_SlashDownRight_2
+  - first:
+      213: 8254563388705700081
+    second: Character_SlashDownRight_3
+  - first:
+      213: -4687544483355475521
+    second: Character_SlashDownRight_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,7 +139,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character_SlashDownRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87adb47c64b510d0800000000000000
+      internalID: -3452655161401563250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownRight_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb68d21a82a8ce0a0800000000000000
+      internalID: -6850949026029926724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownRight_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4324e3947bd2a0180800000000000000
+      internalID: -9148449427818659276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownRight_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f87fbfdaa91e8270800000000000000
+      internalID: 8254563388705700081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_SlashDownRight_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb141c8c02f72feb0800000000000000
+      internalID: -4687544483355475521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
