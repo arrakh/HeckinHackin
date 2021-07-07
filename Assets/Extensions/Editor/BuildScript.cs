@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BuildScript
 {
+
     [MenuItem("Build/Build All")]
     public static void BuildAll()
     {
@@ -19,7 +20,7 @@ public class BuildScript
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] 
         { 
-            "Assets/Scenes/SampleScene.unity" 
+            "Assets/Scenes/Main.unity" 
         };
         buildPlayerOptions.locationPathName = "Builds/Windows/Server/Server.exe";
         buildPlayerOptions.target = BuildTarget.StandaloneWindows64;
@@ -36,7 +37,7 @@ public class BuildScript
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] 
         {
-            "Assets/Scenes/SampleScene.unity"
+            "Assets/Scenes/Main.unity"
         };
         buildPlayerOptions.locationPathName = "Builds/Linux/Server/Server.x86_64";
         buildPlayerOptions.target = BuildTarget.StandaloneLinux64;
@@ -54,7 +55,7 @@ public class BuildScript
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.scenes = new[] 
         {
-            "Assets/Scenes/SampleScene.unity"
+            "Assets/Scenes/Main.unity"
         };
         buildPlayerOptions.locationPathName = "Builds/Windows/Client/Client.exe";
         buildPlayerOptions.target = BuildTarget.StandaloneWindows64;

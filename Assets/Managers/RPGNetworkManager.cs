@@ -6,11 +6,15 @@ using System;
 
 public class RPGNetworkManager : NetworkManager
 {
-    [SerializeField] private List<Transform> spawnPositions;
+    public List<Transform> spawnPositions;
+    public ChatManager chatManager;
 
     public PlayerData clientData;
+    public Leaderboard leaderboard;
     public Action OnConnected;
     public Action OnDisconnected;
+
+    public List<MonsterSpawner> monsterSpawner;
 
     //public override void OnServerAddPlayer(NetworkConnection conn)
     //{
@@ -45,6 +49,10 @@ public class RPGNetworkManager : NetworkManager
 
         //Run OnCreatePlayer on the server when a message is sent from client
         NetworkServer.RegisterHandler<PlayerData>(OnCreatePlayer);
+
+        Debug.Log("Server Started");
+
+        StartCoroutine(SpawnCoroutine());
     }
 
     private void OnCreatePlayer(NetworkConnection conn, PlayerData data)
@@ -56,10 +64,30 @@ public class RPGNetworkManager : NetworkManager
         GameObject playerGO = Instantiate(playerPrefab, spawnPositions[rand].position, spawnPositions[rand].rotation);
 
         //Init Player Data
-        playerGO.GetComponent<DEBUG_QuickChar>().Initialize(data);
+        playerGO.GetComponent<PlayerScript>().Initialize(data, this);
 
         //Add player to connection
         NetworkServer.AddPlayerForConnection(conn, playerGO);
+
+        chatManager.data = data;
+    }
+
+    IEnumerator SpawnCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(6f);
+            foreach (var spawner in monsterSpawner)
+            {
+                spawner.SpawnCheck();
+            }
+        }
+    }
+
+    public Vector3 GetRandomSpawnPos()
+    {
+        int rand = UnityEngine.Random.Range(0, spawnPositions.Count - 1);
+        return spawnPositions[rand].position;
     }
 }
 

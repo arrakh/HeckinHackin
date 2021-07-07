@@ -11,6 +11,10 @@ public class Enemy : NetworkBehaviour, IDamageable
     [SerializeField] private float maxHealth = 100;
 
     public Action<float, float> OnHealthUpdate;
+    public Action OnDeath;
+    public Action OnDamaged;
+
+    private GameObject lastDamager;
 
     [SyncVar(hook = nameof(OnHealthChanged))] 
     private float health;
@@ -18,11 +22,21 @@ public class Enemy : NetworkBehaviour, IDamageable
     private void Start()
     {
         health = maxHealth;
+        OnHealthUpdate?.Invoke(0, 100);
     }
 
     public void Damage(float damage, GameObject damager)
     {
         SetHealth(health - damage);
+        lastDamager = damager;
+        RPC_Damaged();
+    }
+
+    [ClientRpc]
+    void RPC_Damaged()
+    {
+        VFXManager.Instance.SpawnHit(transform.position, true);
+        OnDamaged?.Invoke();
     }
 
     private void SetHealth(float value)
@@ -33,7 +47,19 @@ public class Enemy : NetworkBehaviour, IDamageable
 
     private void DeathFunc()
     {
+        var p = lastDamager.GetComponent<PlayerScript>();
+        if (p != null) p.coin++;
+
+        RPC_DeathFunc();
+
         NetworkServer.Destroy(gameObject);
+    }
+
+    [ClientRpc]
+    void RPC_DeathFunc()
+    {
+        VFXManager.Instance.SpawnHit(transform.position, false);
+        OnDeath?.Invoke();
     }
 
     private void OnHealthChanged(float oldval, float newval)

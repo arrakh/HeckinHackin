@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class HealthbarScript : MonoBehaviour
 {
-    [SerializeField] private DEBUG_QuickChar charScript;
+    [SerializeField] private PlayerScript charScript;
     [SerializeField] private Slider healthSlider;
     [SerializeField] private TMP_Text healthText;
     [SerializeField] private float lerpSpeed;

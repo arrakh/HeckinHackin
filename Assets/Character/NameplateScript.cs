@@ -6,7 +6,7 @@ using UnityEngine;
 public class NameplateScript : MonoBehaviour
 {
     [SerializeField] private TMP_Text nameplate;
-    [SerializeField] private DEBUG_QuickChar charScript;
+    [SerializeField] private PlayerScript charScript;
 
     private void OnEnable()
     {

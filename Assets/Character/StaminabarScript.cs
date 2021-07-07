@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class StaminabarScript : MonoBehaviour
 {
-    [SerializeField] private DEBUG_QuickChar charScript;
+    [SerializeField] private PlayerScript charScript;
     [SerializeField] private Slider staminaSlider;
     [SerializeField] private TMP_Text staminaText;
     [SerializeField] private float lerpSpeed;

@@ -180,7 +180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 378812056273823059}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4273302136456459368
 SpriteRenderer:
@@ -249,6 +249,7 @@ GameObject:
   - component: {fileID: 8169820612965709842}
   - component: {fileID: 736767074018483401}
   - component: {fileID: 7552267284195574455}
+  - component: {fileID: 4356370751644506758}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -269,8 +270,8 @@ Transform:
   m_Children:
   - {fileID: 8486279455204069385}
   - {fileID: 1289098589932550601}
-  - {fileID: 3396538032833908799}
   - {fileID: 3102925149074787161}
+  - {fileID: 3396538032833908799}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -334,21 +335,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 378812056273823071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fbd45c31bc70704fb4d5090ff07f893, type: 3}
+  m_Script: {fileID: 11500000, guid: 52fd547a634f08946831197b03840107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  networkManager: {fileID: 0}
+  weaponCollider: {fileID: 8131895833275965634}
   floatingTextPos: {fileID: 8486279455204069385}
-  staminaBar: {fileID: 0}
+  staminaBar: {fileID: 1849375370580765509}
   animator: {fileID: 378812056273823058}
   netAnimator: {fileID: 736767074018483401}
   spriteRenderer: {fileID: 378812056273823056}
   movement: {x: 0, y: 0}
   walkSpeed: 5
-  runSpeed: 8
-  runStaminaDrain: 20
+  runSpeed: 10
+  runStaminaDrain: 75
   staminaRecoveryRate: 10
+  damage: 23
   maxHealth: 100
   maxStamina: 100
   playerCanvas: {fileID: 160223885628382022}
@@ -357,6 +361,7 @@ MonoBehaviour:
   isMoving: 0
   health: 0
   stamina: 0
+  coin: 0
   data:
     playerName: 
 --- !u!50 &378812056273823061
@@ -479,6 +484,31 @@ MonoBehaviour:
   compressRotation: 0
   interpolateScale: 0
   syncScale: 0
+--- !u!114 &4356370751644506758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378812056273823071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026f91edae6f2824b852ff34d86905eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 378812056273823057}
+  attackAudio:
+  - {fileID: 8300000, guid: a85cc6f1d77ee4e40a983a50e20b847b, type: 3}
+  - {fileID: 8300000, guid: 763c0f9432099604ea4ee8c695007368, type: 3}
+  - {fileID: 8300000, guid: 322beb7eb0db5cb4c85d609aebef642c, type: 3}
+  damagedAudio:
+  - {fileID: 8300000, guid: e730370bd9da5d740bf9af1c6a646033, type: 3}
+  - {fileID: 8300000, guid: 76d78fba46fab4a4ab6615542cffe380, type: 3}
+  - {fileID: 8300000, guid: b5d739080453bb14ebdeac2cc2aa0c84, type: 3}
+  - {fileID: 8300000, guid: cd360fdbdf1d77845bd94b2b46fa6c2a, type: 3}
+  - {fileID: 8300000, guid: cb9730e4be03f2941ba9e5c4212ffce2, type: 3}
+  deathAudio:
+  - {fileID: 8300000, guid: 1dd033d4e3434d340b02612ccbf20c49, type: 3}
 --- !u!1 &789709725144533273
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +895,7 @@ RectTransform:
   - {fileID: 6179724139199742932}
   - {fileID: 1718016634571645995}
   m_Father: {fileID: 378812056273823059}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1302,13 +1332,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3640115062043870280}
-  m_LocalRotation: {x: -0.38116843, y: -0.03401834, z: -0.08212754, w: 0.92022204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 378812056273823059}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -45, y: 0, z: -10.2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &9060278800394802859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1322,7 +1352,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.75}
+  m_Offset: {x: -0.5, y: -0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1333,7 +1363,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 1.4}
+  m_Size: {x: 1.75, y: 1.4}
   m_EdgeRadius: 0
 --- !u!114 &8131895833275965634
 MonoBehaviour:
@@ -1347,8 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52892edcafc56244baf7675a56cc422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: {fileID: 8169820612965709842}
-  damage: 20
+  player: {fileID: 378812056273823057}
 --- !u!1 &4249565073269981278
 GameObject:
   m_ObjectHideFlags: 0
