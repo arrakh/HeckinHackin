@@ -1,6 +1,7 @@
 # HeckinHackin
 HeckinHackin is a game where you gather as many points either by killing monsters, or stealing other player's points!
 ![ezgif-1-505131232e18](https://user-images.githubusercontent.com/33478892/124806313-c5148480-df86-11eb-8127-79f297cef879.gif)
+
 Walk with WASD, run with Shift, and attack with Enter!
 
 This project is made with Unity (2019.4.7f1) using Mirror with KcP Transport.
